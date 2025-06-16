@@ -1,115 +1,131 @@
 <!DOCTYPE html>
+
 <html lang="pt-BR">
+
 <head>
+
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
   <title>Lanchonete do Sabor</title>
+
   <link rel="stylesheet" href="style.css" />
+
 </head>
+
 <body>
-  
 
   <!-- Cabeçario-->
+
   <header>
-       <h1>pagina inicial</h1>
-    <img src=""
-    <div class="logo">
-      <img src="" />
+
+    <h1>pagina inicial</h1>
+    <img src=""  class="logo">
+
+    <img src="" />
+
     </div>
+
     <nav>
+
       <ul>
+
         <li><a href="#destaque">Início</a></li>
+
         <li><a href="#cardapio">Cardápio</a></li>
-        <li><a href="#Promoções">Promoções</a></li>
+
+        <li><a href="#promocoes">Promoções</a></li>
+
         <li><a href="#cadastro">Cadastro</a></li>
+
       </ul>
+
     </nav>
+
   </header>
 
   <!-- Seção de Destaque -->
+
   <section id="destaque">
+
     <h1>Bem-vindo à Lanchonete Sabor e Arte</h1>
+
     <p>Os melhores lanches, feitos com ingredientes frescos e muito amor.</p>
+
     <a href="#cardapio" class="botao">Ver Cardápio</a>
+
   </section>
 
- 
-<section id="cardapio">
-  <h2>🍔 Nosso Cardápio</h2>
+  <section id="cardapio">
 
+    <h2>🍔 Nosso Cardápio</h2>
+</h2>  <!-- COMBOS -->  
+<br>
+<h3>COMBOS</h3>
 
-  <!-- COMBOS -->
-  <h3>COMBOS</h3>
-  <br>
   <div class="itens-cardapio">
     <div class="item">
-      <img src="https://down-br.img.susercontent.com/file/br-11134207-7r98o-lzc1n9xkguqde8" alt="Combo Solteiro">
+      <img src="https://png.pngtree.com/png-vector/20240611/ourmid/pngtree-a-hamburger-fries-and-cola-with-some-drinks-png-image_12652208.png" alt="Combo Solteiro">
       <h4>Combo Solteiro</h4>
-      <p>Whopper + Batata Média + Refri 500ml</p>
+      <p>hamburguer + Batata Média + Refri 500ml</p>
       <span>R$ 34,90</span>
-       <button>Adicionar</button>
+      <button onclick="adicionarProduto('Combo Solteiro', 34.90)">Adicionar</button>
     </div>
+
 
     <div class="item">
       <img src="https://alloydeliveryimages.s3.sa-east-1.amazonaws.com/item_images/10154/66469395503f9h00pf.webp" alt="Combo Ficante">
       <h4>Combo Ficante</h4>
       <p>Frango empanado + Batata + Refri</p>
       <span>R$ 32,90</span>
-       <button>Adicionar</button>
+      <button onclick="adicionarProduto('Combo Ficante', 32.90)">Adicionar</button>
     </div>
-  </div>
 
-  <!-- LANCHES -->
-   <br>
-  <h3>LANCHES</h3>
-  <br>
+
+  </div>  <!-- LANCHES -->  <h3>LANCHES</h3>
   <div class="itens-cardapio">
     <div class="item">
       <img src="https://anamariabrogui.com.br/assets/uploads/receitas/fotos/3eifb80zpjokoswcoc.png" alt="Simple Burguer">
       <h4>Simple Burguer</h4>
       <p>Pão, carne, queijo, ketchup e mostarda</p>
       <span>R$ 10,90</span>
-       <button>Adicionar</button>
+      <button onclick="adicionarProduto('Simple Burguer', 10.90)">Adicionar</button>
     </div>
 
+   <div class="item">
+      <img src="https://tanaondabar.com.br/wp-content/uploads/2013/07/LANCHES-1.png" alt="X Burguer">
+      <h4>X Burguer</h4>
+      <p>hamburguer,bacon, queijo, alface e molho especial</p>
+      <span>R$ 18,90</span>
+      <button onclick="adicionarProduto('Big Burguer',18.90)">Adicionar</button>
+    </div>
     <div class="item">
-      <img src=" https://cdn.olivre.com.br/wp-content/uploads/2018/11/DuploPicanha-McDonalds.png" alt="Big Burguer">
+      <img src="https://cdn.olivre.com.br/wp-content/uploads/2018/11/DuploPicanha-McDonalds.png" alt="Big Burguer">
       <h4>Big Burguer</h4>
       <p>Dois hambúrgueres, queijo, alface e molho especial</p>
       <span>R$ 18,90</span>
-       <button>Adicionar</button>
-    </div>
-  </div>
-
-     <div class="itens do cardapio">
-      <img src="" alt="Cheddar Bacon">
-      <h4>Cheddar Bacon</h4>
-      <p>Cheddar cremoso, bacon crocante e fritas.</p>
-      <span class="preco">R$ 24,90</span>
-      <button>Adicionar</button>
+      <button onclick="adicionarProduto('Big Burguer',18.90)">Adicionar</button>
     </div>
 
 
-  <!-- ACOMPANHAMENTOS -->
-  <br>
-  <h3>ACOMPANHAMENTOS</h3>
-  <br>
+  </div>  <!-- ACOMPANHAMENTOS -->  <h3>ACOMPANHAMENTOS</h3>
   <div class="itens-cardapio">
     <div class="item">
-      <img src=" https://cdn.casaeculinaria.com/wp-content/uploads/2023/03/13101208/Batata-frita.jpg" alt="Batata Frita">
+      <img src="https://cdn.casaeculinaria.com/wp-content/uploads/2023/03/13101208/Batata-frita.jpg" alt="Batata Frita">
       <h4>Batata Frita</h4>
       <p>Porção média de batatas crocantes</p>
       <span>R$ 9,90</span>
-       <button>Adicionar</button>
+      <button onclick="adicionarProduto('Batata Frita', 9.90)">Adicionar</button>
     </div>
 
-    
-     <div class="itens do cardapio">
+
+    <div class="item">
       <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS58PUconuA93VkOkZIa53hoydAPO_QXhudj22mvQtMbYxsZKCptx9mpeE_QHmytocpIG0&usqp=CAU" alt="Cheddar Bacon">
       <h4>Cheddar Bacon</h4>
       <p>Cheddar cremoso, bacon crocante e fritas.</p>
-      <span class="preco">R$ 24,90</span>
-      <button>Adicionar</button>
+      <span>R$ 24,90</span>
+      <button onclick="adicionarProduto('Cheddar Bacon Frita', 24.90)">Adicionar</button>
     </div>
 
 
@@ -118,43 +134,49 @@
       <h4>Onion Rings</h4>
       <p>Anéis de cebola empanados</p>
       <span>R$ 12,90</span>
-       <button>Adicionar</button>
+      <button onclick="adicionarProduto('Onion Rings', 12.90)">Adicionar</button>
     </div>
-  </div>
 
-  <!-- SOBREMESAS -->
-   <br>
-  <h3>SOBREMESAS</h3>
-  <br>
+
+  </div>  <!-- SOBREMESAS -->  <h3>SOBREMESAS</h3>
   <div class="itens-cardapio">
     <div class="item">
-      <img src="c:\Users\HT.SIS\Pictures\Screenshots\Captura de tela 2025-06-05 161211.png" alt="Sundae">
-      <h4>Sundae</h4>
-      <p>Sorvete com calda de chocolate ou morango</p>
-      <span>R$ 7,90</span>
-       <button>Adicionar</button>
+      <img src="https://resize.casapino.com.br/?u=https://cms-bomgourmet.s3.amazonaws.com/bomgourmet/2021/08/10210431/C%C3%A3oV%C3%A9io-7.jpg&w=480" alt="Torta">
+      <h4>Torta</h4>
+      <p>Sabor chocolate</p>
+      <span>R$ 12,90</span>
+      <button onclick="adicionarProduto('Milkshake', 12.90)">Adicionar</button>
     </div>
-
-    <div class="item">
+   <div class="item">
+      <img src="https://www.iped.com.br/_upload/content/2015/05/05/segredos-sobremesas-tradicionais.jpg" alt="Pudim de Leite">
+      <h4>Pudim de Leite</h4>
+      <span>R$ 12,90</span>
+      <button onclick="adicionarProduto('Milkshake', 12.90)">Adicionar</button>
+    </div>
+   <div class="item">
       <img src="https://img.freepik.com/fotos-premium/milk-shake-de-chocolate-e-morango-com-baunilha_872147-11808.jpg" alt="Milkshake">
       <h4>Milkshake</h4>
       <p>Sabor baunilha, morango ou chocolate</p>
       <span>R$ 12,90</span>
-       <button>Adicionar</button>
+      <button onclick="adicionarProduto('Milkshake', 12.90)">Adicionar</button>
     </div>
-  </div>
 
-  <!-- BEBIDAS -->
-   <br>
-  <h3>BEBIDAS</h3>
-  <br>
+
+  </div>  <!-- BEBIDAS -->  <h3>BEBIDAS</h3>
   <div class="itens-cardapio">
     <div class="item">
       <img src="https://thumbs.dreamstime.com/b/coca-cola-fanta-sprite-em-um-fundo-escuro-128883686.jpg" alt="Refrigerante">
       <h4>Refrigerante</h4>
-      <p>500ml - Coca-Cola, Fanta ou sprite</p>
+      <p>500ml - Coca-Cola, Fanta ou Sprite</p>
       <span>R$ 6,90</span>
-       <button>Adicionar</button>
+      <button onclick="adicionarProduto('Refrigerante', 6.90)">Adicionar</button>
+    </div>
+     <div class="item">
+      <img src="https://diariodonordeste.verdesmares.com.br/image/contentid/policy:1.3390911:1688940295/sucos-e-frutas.jpg?f=default&$p$f=9e61a10" alt="Sucos Naturais">
+      <h4>Sucos Naturais</h4>
+      <p>Laranja,Morango,Kiwi</p>
+      <span>R$ 3,90</span>
+      <button onclick="adicionarProduto('Água Mineral', 3.90)">Adicionar</button>
     </div>
 
     <div class="item">
@@ -162,65 +184,482 @@
       <h4>Água Mineral</h4>
       <p>Com ou sem gás</p>
       <span>R$ 3,90</span>
-       <button>Adicionar</button>
+      <button onclick="adicionarProduto('Água Mineral', 3.90)">Adicionar</button>
     </div>
-  </div>
 
-  
-<!-- PROMOÇÕES -->
- <br>
-<section id="PROMOÇÕES">
-  <br>
-  <h2>🔥 Promoções Especiais</h2>
+
+  </div>  <!-- PROMOÇÕES --> 
+<h4>PROMOÇÕES</h4>
+
+ <a href="#">
+<section id="promocoes">
+  <h2>Promoções</h2>
+  <!-- Aqui vão os cards ou conteúdo das promoções -->
+</section></a>
+
+ <section id="promoçoes">
+  <!-- conteúdo das promoções -->
+</section>
   <div class="itens-cardapio">
-    <div class="item Promoções">
-      <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRgZ0bb-6Ve6uy1dKq3JPQXMzqwudlxqbvvBw&s" alt="Promoção Combo Família">
+    <div class="item">
+     
+<BR>
+  
+   <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRgZ0bb-6Ve6uy1dKq3JPQXMzqwudlxqbvvBw&s" alt="Combo Família">
       <h4>Combo Família</h4>
       <p>2 Burgers + 2 Batatas + 2 Refrigerantes</p>
-      <span class="preco-promocional">R$ 54,90</span>
-       <button>Adicionar</button>
+      <span>R$ 54,90</span>
+      <button onclick="adicionarProduto('Combo Família', 54.90)">Adicionar</button>
     </div>
-
-<div class="item Promoções">
+    <div class="item">
       <img src="https://tanaondabar.com.br/wp-content/uploads/2018/01/peti.jpg" alt="Sobremesa Grátis">
       <h4>Sobremesa Grátis</h4>
       <p>Na compra de 2 combos, leve 1 petit gateau grátis!</p>
-      <span class="preco-promocional">Grátis</span>
-       <button>Adicionar</button>
+      <span>Grátis</span>
+      <button onclick="adicionarProduto('Sobremesa Grátis', 0.00)">Adicionar</button>
     </div>
-  </div>
+    <div class="itens-cardapio">
+    <div class="item">
+      <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRJxZQtpJBaBp8oHQ_LzClMgpV7Hi1L7coQRw&s" alt="Ursinho">
+      <h4>Ursinho</h4>
+      <p>compre combo do dia dos namorados e ganhe de graça</p>
+      <span></span>
+      <button onclick="adicionarProduto('Milkshake', 12.90)">Adicionar</button>
+    </div>
+    <div class="itens-cardapio">
+    <div class="item">
+      <img src="https://www.academiaassai.com.br/sites/default/files/dicas-de-comidas-romanticas-para-lucrar-no-dia-dos-namorados.jpg" alt="Cupcake">
+      <h4>Cupcake</h4>
+      <p>Sabor chocolate</p>
+      <span>R$ 8,0</span>
+      <button onclick="adicionarProduto('Milkshake', 12.90)">Adicionar</button>
+    </div>
+    <div class="itens-cardapio">
+    <div class="item">
+      <img src="https://cdn.abrahao.com.br/base/967/edf/dcd/705-485-hamburgueria-dia-dos-namorados.jpg" alt="Torta">
+      <h4>hamburguer</h4>
+      <p>combo dia dos namorados</p>
+      <span>R$ 40,00</span>
+      <button onclick="adicionarProduto('Milkshake', 12.90)">Adicionar</button>
+    </div>
+</div>
+
+<!-- Resultado -->
+<p id="FELIZ DIA PARA O CASAL" class="text-center font-semibold mt-4 text-lg"></p>
 </section>
 
-  <!-- Botão para baixar o PDF -->
-  <a href="cardapio.pdf" class="botao-download" download>📥 Baixar Cardápio em PDF</a>
-</section>
-
-  <!-- Cadastro -->
-  <section id="cadastro">
-    <h2>Cadastre-se para receber promoções</h2>
-    <form id="formulario">
-      <input type="text" id="nome" name="nome" placeholder="Nome completo" required />
-      <input type="text" id="email" name="email" placeholder="Seu e-mail" required />
-      <input type="number" id="telefone" name="telefone" placeholder="Telefone com DDD" required />
-      <input type="text" id="endereço" name="endereço" placeholder="endereço" required/>
-      <input type="number" id="endereço" name="casa" placeholder="numero" required/>
-       <input type="text" id="endereço" name="bairro/avenida" placeholder="bairro/avenida" required/>
-      <button type="submit">Enviar</button>
-      <p id="mensagem"></p>
-    </form>
+    <p id="mensagem-cupom-combo"></p>
   </section>
 
-  <!-- Rodapé -->
-    <footer id="contato">
-    <h2>Contato</h2>
-    <p>📞 (11) 98888-8888</p>
-    <p>📍 Av. dos Lanches, 456 – São Paulo, SP</p>
-    <p>🕒 Seg a Dom: 11h às 23h</p>
-    <p>© 2025 Lanchonete Sabor & Arte. Todos os direitos reservados.</p>
-  
-  </footer>
+  <script>
+    function ativarCupomCombo(codigo) {
+      let mensagem = "";
+
+      switch (codigo) {
+        case "COMBOAPAIXONADO":
+          mensagem = "✅ Cupom 'COMBOAPAIXONADO' ativado! Compre 1 combo e ganhe outro grátis.";
+          break;
+        case "COMBO20":
+          mensagem = "🔥 Cupom 'COMBO20' ativado! 20% OFF em combos acima de R$40.";
+          break;
+        default:
+          mensagem = "❌ Cupom inválido para combos.";
+      }
+
+      const msgEl = document.getElementById("mensagem-cupom-combo");
+      msgEl.textContent = mensagem;
+      msgEl.style.color = mensagem.includes("❌") ? "red" : "green";
+    }
+  </script>
+
+</body>
+</html>
+<div class="combos-promocionais grid grid-cols-1 md:grid-cols-3 gap-4 p-4">
+     
+
+    <!-- Botão para baixar o PDF -->
+
+    <a href="c:\Users\HT.SIS\Pictures\Screenshots\Captura de tela 2025-06-16 142654.png" class="botao-download" download>📥 Baixar Cardápio em PDF</a>
+
+  </section>
+
+
+  <!-- Cadastro -->
+
+  <section id="cadastro">
+
+    <h2>Cadastre-se para receber promoções</h2>
+
+    <form id="formulario">
+
+      <input type="text" id="nome" name="nome" placeholder="Nome completo" required />
+
+      <input type="text" id="email" name="email" placeholder="Seu e-mail" required />
+
+      <input type="number" id="telefone" name="telefone" placeholder="Telefone com DDD" required />
+
+      <input type="text" id="endereço" name="endereço" placeholder="endereço" required />
+
+      <input type="number" id="endereço" name="casa" placeholder="numero" required />
+
+      <input type="text" id="endereço" name="bairro/avenida" placeholder="bairro/avenida" required />
+
+      <button type="submit">Enviar</button>
+
+      <p id="mensagem"></p>
+
+    </form>
+
+  </section>
+
+  <section id="carrinho" style="max-width: 400px; margin: 20px auto; font-family: Arial, sans-serif;">
+
+    <h2>Meu Carrinho</h2>
+
+    <ul id="lista-carrinho" style="list-style: none; padding: 0; border: 1px solid #ccc; border-radius: 6px; min-height: 100px; margin-bottom: 10px;"></ul>
+
+    <p><strong>Total: R$ <span id="total">0,00</span></strong></p>
+
+    <button id="btn-limpar" style="padding: 8px 12px; background-color: #e74c3c; color: white; border: none; border-radius: 5px; cursor: pointer; margin-bottom: 20px;">Limpar Carrinho</button>
+
+    <h2>Pagamento</h2>
+
+    <form id="form-pagamento" style="display: flex; flex-direction: column; gap: 12px;">
+
+      <label>
+
+        <input type="radio" name="metodo-pagamento" value="cartao" checked>
+
+        Cartão de Crédito/Débito
+
+      </label>
+
+      <label>
+
+        <input type="radio" name="metodo-pagamento" value="pix">
+
+        Pix
+
+      </label>
+
+      <div id="form-cartao" style="display: block; flex-direction: column; gap: 8px;">
+
+        <input type="text" id="nome-cartao" placeholder="Nome no Cartão" required style="padding: 8px; border-radius: 4px; border: 1px solid #ccc;">
+
+        <input type="text" id="numero-cartao" placeholder="Número do Cartão" maxlength="16" required style="padding: 8px; border-radius: 4px; border: 1px solid #ccc;">
+
+        <div style="display: flex; gap: 8px;">
+
+          <input type="text" id="validade-cartao" placeholder="Validade (MM/AA)" maxlength="5" required style="flex:1; padding: 8px; border-radius: 4px; border: 1px solid #ccc;">
+
+          <input type="text" id="cvv-cartao" placeholder="CVV" maxlength="3" required style="width: 80px; padding: 8px; border-radius: 4px; border: 1px solid #ccc;">
+
+        </div>
+
+      </div>
+
+      <div id="form-pix" style="display: none;">
+
+        <p>Use o QR Code abaixo para pagar via Pix:</p>
+
+        <img src="c:\Users\HT.SIS\Downloads\WhatsApp Image 2025-06-10 at 16.13.03.jpeg" alt="QR Code Pix" style="width: 150px; height: 150px; margin-bottom: 10px;">
+
+        <input type="text" id="chave-pix" placeholder="Chave Pix (CPF, email ou celular)" style="padding: 8px; border-radius: 4px; border: 1px solid #ccc;">
+
+      </div>
+
+      <button type="submit" style="padding: 10px; background-color: #27ae60; color: white; border: none; border-radius: 5px; cursor: pointer;">Finalizar Compra</button>
+
+    </form>
+
+  </section>
+
+  <script>
+
+    const carrinho = [];
+
+    function adicionarProduto(nome, preco) {
+
+      const index = carrinho.findIndex(item => item.nome === nome);
+
+      if (index > -1) {
+
+        carrinho[index].quantidade++;
+
+      } else {
+
+        carrinho.push({
+
+          nome,
+
+          preco,
+
+          quantidade: 1
+
+        });
+
+      }
+
+      atualizarCarrinho();
+
+    }
+
+    const listaCarrinho = document.getElementById('lista-carrinho');
+
+    const totalElem = document.getElementById('total');
+
+    const btnLimpar = document.getElementById('btn-limpar');
+
+    function formatarPreco(valor) {
+
+      return valor.toFixed(2).replace('.', ',');
+
+    }
+
+    function atualizarCarrinho() {
+
+      listaCarrinho.innerHTML = '';
+
+      let total = 0;
+
+      if (carrinho.length === 0) {
+
+        listaCarrinho.innerHTML = '<li style="text-align:center; padding: 20px; color: #888;">Carrinho vazio</li>';
+
+      }
+
+      carrinho.forEach((item, index) => {
+
+        total += item.preco * item.quantidade;
+
+        const li = document.createElement('li');
+
+        li.style.display = 'flex';
+
+        li.style.justifyContent = 'space-between';
+
+        li.style.alignItems = 'center';
+
+        li.style.padding = '8px 10px';
+
+        li.style.borderBottom = '1px solid #eee';
+
+        li.innerHTML = `
+
+        <span>${item.nome} x${item.quantidade} - R$ ${formatarPreco(item.preco * item.quantidade)}</span>
+
+        <button onclick="removerProduto(${index})" style="background: #e74c3c; color: white; border: none; border-radius: 4px; cursor: pointer;">X</button>
+
+      `;
+
+        listaCarrinho.appendChild(li);
+
+      });
+
+      totalElem.textContent = formatarPreco(total);
+
+    }
+
+    function removerProduto(index) {
+
+      carrinho.splice(index, 1);
+
+      atualizarCarrinho();
+
+    }
+
+    btnLimpar.addEventListener('click', () => {
+
+      carrinho.length = 0;
+
+      atualizarCarrinho();
+
+    });
+
+    // Controle formulário pagamento
+
+    const radiosPagamento = document.querySelectorAll('input[name="metodo-pagamento"]');
+
+    const formCartao = document.getElementById('form-cartao');
+
+    const formPix = document.getElementById('form-pix');
+
+    const formPagamento = document.getElementById('form-pagamento');
+
+    radiosPagamento.forEach(radio => {
+
+      radio.addEventListener('change', () => {
+
+        if (radio.value === 'cartao' && radio.checked) {
+
+          formCartao.style.display = 'flex';
+
+          formPix.style.display = 'none';
+
+          // Tornar campos cartão required, Pix não
+
+          formCartao.querySelectorAll('input').forEach(i => i.required = true);
+
+          formPix.querySelector('input').required = false;
+
+        } else if (radio.value === 'pix' && radio.checked) {
+
+          formCartao.style.display = 'none';
+
+          formPix.style.display = 'block';
+
+          // Tornar campos Pix required, cartão não
+
+          formPix.querySelector('input').required = true;
+
+          formCartao.querySelectorAll('input').forEach(i => i.required = false);
+
+        }
+
+      });
+
+    });
+
+    formPagamento.addEventListener('submit', e => {
+
+      e.preventDefault();
+
+      if (carrinho.length === 0) {
+
+        alert('Seu carrinho está vazio!');
+
+        return;
+
+      }
+
+      const metodo = formPagamento.querySelector('input[name="metodo-pagamento"]:checked').value;
+
+      if (metodo === 'cartao') {
+
+        alert('Pagamento com cartão processado (simulado). Obrigado pela compra!');
+
+      } else if (metodo === 'pix') {
+
+        alert('Pagamento via Pix processado (simulado). Obrigado pela compra!');
+
+      }
+
+      // Após pagamento, limpa carrinho e formulário
+
+      carrinho.length = 0;
+
+      atualizarCarrinho();
+
+      formPagamento.reset();
+
+      // Forçar exibir cartão após reset (padrão)
+
+      formCartao.style.display = 'flex';
+
+      formPix.style.display = 'none';
+
+    });
+
+    atualizarCarrinho();
+
+  </script>
+
+  <section id="commentsSection">
+  <h2>Deixe seu comentário</h2>
+
+  <form id="commentForm">
+    <label for="name">Nome:</label>
+    <input type="text" id="name" name="name" required maxlength="50" placeholder="Seu nome" />
+
+    <label for="comment">Comentário:</label>
+    <textarea id="comment" name="comment" rows="4" required maxlength="500" placeholder="Escreva seu comentário aqui..."></textarea>
+
+    <button type="submit">Enviar</button>
+  </form>
+
+  <ul class="comments-list" id="commentsList"></ul>
+</section>
+
+
 
   <!-- Script JS -->
+
   <script src="script.js"></script>
+
+  <script>
+  // Função para formatar a data no padrão brasileiro
+  function formatDate(date) {
+    return date.toLocaleString('pt-BR', {
+      day: '2-digit',
+      month: '2-digit',
+      year: 'numeric',
+      hour: '2-digit',
+      minute: '2-digit',
+    });
+  }
+
+  // Espera o DOM carregar para garantir que os elementos existem
+  document.addEventListener('DOMContentLoaded', () => {
+    const commentsList = document.getElementById('commentsList');
+    const commentForm = document.getElementById('commentForm');
+
+    // Função que carrega os comentários do localStorage e exibe na lista
+    function loadComments() {
+      const comments = JSON.parse(localStorage.getItem('comments')) || [];
+      commentsList.innerHTML = '';
+      comments.forEach(({ name, comment, date }) => {
+        const li = document.createElement('li');
+        li.className = 'comment-item';
+        li.innerHTML = `
+          <strong>${name}</strong>
+          <p>${comment}</p>
+          <div class="comment-date">${formatDate(new Date(date))}</div>
+        `;
+        commentsList.appendChild(li);
+      });
+    }
+
+    // Evento ao enviar o formulário de comentário
+    commentForm.addEventListener('submit', e => {
+      e.preventDefault();
+
+      const name = commentForm.name.value.trim();
+      const comment = commentForm.comment.value.trim();
+
+      if (name && comment) {
+        const comments = JSON.parse(localStorage.getItem('comments')) || [];
+        comments.unshift({ name, comment, date: new Date().toISOString() });
+        localStorage.setItem('comments', JSON.stringify(comments));
+        commentForm.reset();
+        loadComments();
+      }
+    });
+
+    // Carrega comentários ao iniciar a página
+    loadComments();
+  });
+</script>
+
+
+  <!-- Rodapé -->
+
+  <footer id="contato">
+
+    <h2>Contato</h2>
+
+    <p>📞 (31) 99889-9889</p>
+
+    <p>📍 Bairro Santa Quiteria, 456 – Catas Altas, MG</p>
+
+    <p>🕒 Seg a Dom: 11h às 23h</p>
+
+    <p>© 2025 Lanchonete Sabor & Arte. Todos os direitos reservados.</p>
+
+  </footer>
+
+</script>
+
+
 </body>
+
 </html>
